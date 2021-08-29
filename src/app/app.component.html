@@ -1,0 +1,6 @@
+<h3>Hi This is a {{title}}</h3>
+<input type="text" class="form-control"[(ngModel)]="userName">
+<p>{{userName}}</p>
+<button [disabled]="userName===''" (click)="onbutton()">Reset</button>
+<button (click)="showPara()">Show </button>
+<p [hidden]=flag>This is sample para</p>
