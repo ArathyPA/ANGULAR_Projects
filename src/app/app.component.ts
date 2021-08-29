@@ -9,12 +9,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'test-project';
   userName='TestuserName';
+  logArry=[1];
   flag=true;
+  
 onbutton(){
   this.userName="";  
   }
-showPara(){
+showPara(){  
   this.flag= !this.flag;
-
+  this.logArry.push(this.logArry.length+1);
 }
 }

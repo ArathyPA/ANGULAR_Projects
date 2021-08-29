@@ -4,3 +4,6 @@
 <button [disabled]="userName===''" (click)="onbutton()">Reset</button>
 <button (click)="showPara()">Show </button>
 <p [hidden]=flag>This is sample para</p>
+<div *ngFor="let logelem of logArry"
+[ngStyle]="{backgroundColor: logelem>=5 ? 'blue':'transparent'}"
+[ngClass]="{'white-class':logelem>=5}">{{logelem}}</div>
